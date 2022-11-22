@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+html,body{
+    background-color: steelblue;
+    min-width: 100vh;
+    min-height: 100vh;
+
+}
+main{
+    margin: 30px;
+}
+h1{
+    padding: 30px;
+    color: aliceblue;
+    
+}
+.div-image{
+    padding: 30px;
+    margin: auto;
+    position: relative;
+    list-style: none ;
+}
+.img {
+    display: none;
+    margin-left: 350px;
+    
+}
+
+img{
+    height: 400px;
+    width: 700px;
+}
+
+.backward-button {
+ cursor: pointer;
+ position:absolute;
+ top: 50%;
+ width: auto;
+ margin-top: -22px;
+ padding: 16px;
+ color: rgb(127, 187, 255);
+ background-color: blue;
+ font-weight: bold;
+ transition: 0.6s ease;
+ border-radius: 50px;
+ user-select: none; 
+ left: 65rem;
+ opacity: 0;
+
+}
+
+.forward-button{
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(127, 187, 255);
+    background-color: blue;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 50px;
+    user-select: none; 
+    left: 65rem;
+    opacity: 0;
+     
+}
+.backward-button:hover{
+    opacity: 1;
+
+}
+.vanish{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes vanish {
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
